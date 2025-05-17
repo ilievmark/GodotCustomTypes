@@ -1,6 +1,6 @@
 using System;
 
-namespace CustomTypesLoader.Attributes;
+namespace GodotCustomTypes.Attributes;
 
 [AttributeUsage(AttributeTargets.Class)]
 public class MuteTypeLoadingAttribute : Attribute

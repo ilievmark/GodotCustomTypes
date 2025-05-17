@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CustomTypesLoader.Metadata;
+namespace GodotCustomTypes.Metadata;
 
 public interface ITypesLoader
 {

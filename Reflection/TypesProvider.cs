@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Godot;
 
-namespace CustomTypesLoader.Reflection;
+namespace GodotCustomTypes.Reflection;
 
 public class TypesProvider
 {

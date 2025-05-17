@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace CustomTypesLoader.Reflection;
+namespace GodotCustomTypes.Reflection;
 
 public class AssembliesProvider
 {

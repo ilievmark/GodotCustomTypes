@@ -1,7 +1,7 @@
 using System;
 using Godot;
 
-namespace CustomTypesLoader.Metadata.Data;
+namespace GodotCustomTypes.Metadata.Data;
 
 public class IconProvider
 {

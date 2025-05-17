@@ -1,13 +1,13 @@
 using Godot;
 using System.Collections.Generic;
-using CustomTypesLoader.Attributes;
-using CustomTypesLoader.Metadata;
+using GodotCustomTypes.Attributes;
+using GodotCustomTypes.Metadata;
 
 // Originally written by wmigor
 // Edited by Atlinx to recursively search for files.
 // Edited by bls220 to update for Godot 4.0
 // wmigor's Public Repo: https://github.com/wmigor/godot-mono-custom-resource-register
-namespace CustomTypesLoader
+namespace GodotCustomTypes
 {
 #if TOOLS
     [Tool]

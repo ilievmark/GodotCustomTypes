@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Autofac.Util;
-using CustomTypesLoader.Attributes;
+using GodotCustomTypes.Attributes;
 
-namespace CustomTypesLoader.Reflection;
+namespace GodotCustomTypes.Reflection;
 
 public class RelatedTypesProvider
 {

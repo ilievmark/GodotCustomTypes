@@ -2,7 +2,7 @@ using System;
 using System.Text;
 using Godot;
 
-namespace CustomTypesLoader.Metadata.Data;
+namespace GodotCustomTypes.Metadata.Data;
 
 public class ScriptProvider
 {

@@ -1,6 +1,6 @@
 using System;
 
-namespace CustomTypesLoader.Metadata.Data;
+namespace GodotCustomTypes.Metadata.Data;
 
 public class BaseTypeProvider
 {

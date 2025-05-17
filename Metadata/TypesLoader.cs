@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Godot;
-using CustomTypesLoader.Metadata.Data;
-using CustomTypesLoader.Reflection;
+using GodotCustomTypes.Metadata.Data;
+using GodotCustomTypes.Reflection;
 
-namespace CustomTypesLoader.Metadata;
+namespace GodotCustomTypes.Metadata;
 
 public class TypesLoader : ITypesLoader
 {

@@ -3,7 +3,7 @@ using Godot.Collections;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace CustomTypesLoader
+namespace GodotCustomTypes
 {
     public static class Settings
     {
@@ -40,7 +40,7 @@ namespace CustomTypesLoader
 
         private static Variant GetSettings(string title)
         {
-            return ProjectSettings.GetSetting($"{nameof(CustomTypesLoader)}/{title}");
+            return ProjectSettings.GetSetting($"{nameof(GodotCustomTypes)}/{title}");
         }
 
         private static void AddSetting<T>(string title, Variant.Type type, T value, PropertyHint hint = PropertyHint.None, string hintString = "")
@@ -59,6 +59,6 @@ namespace CustomTypesLoader
             GD.Print("Successfully added property: " + title);
         }
 
-        private static string SettingPath(string title) => $"{nameof(CustomTypesLoader)}/{title}";
+        private static string SettingPath(string title) => $"{nameof(GodotCustomTypes)}/{title}";
     }
 }
