@@ -36,7 +36,7 @@ public class RelatedTypesProvider
     private bool IsTypeToBeSkipped(Type type)
         => type.IsAbstract ||
            !IsRelatedType(type) ||
-           Attribute.GetCustomAttribute(type, typeof(MuteTypeLoadingAttribute)) != null;
+           Attribute.GetCustomAttribute(type, typeof(MuteTypeRegistrationAttribute)) != null;
 
     private bool IsRelatedType(Type type)
     {

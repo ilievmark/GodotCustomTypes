@@ -11,7 +11,7 @@ namespace GodotCustomTypes
 {
 #if TOOLS
     [Tool]
-    [MuteTypeLoading]
+    [MuteTypeRegistration]
     public partial class Plugin : EditorPlugin
     {
         private readonly ITypesLoader _typesLoader = new SortedTypesLoaderDecorator(new TypesLoader());
