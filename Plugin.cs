@@ -46,7 +46,7 @@ namespace GodotCustomTypes
 
         public void RefreshCustomClasses()
         {
-            GD.Print("\nRefreshing Registered Resources...");
+            GD.Print("Refreshing Registered Resources...");
             UnregisterCustomClasses();
             RegisterCustomClasses();
         }
