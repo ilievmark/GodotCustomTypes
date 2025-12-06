@@ -58,7 +58,7 @@ public class ScriptProvider
     {
         foreach (string directory in Settings.ResourceScriptDirectories)
         {
-            string? fileFound = FindClassPathRecursiveHelper(type, directory);
+            string fileFound = FindClassPathRecursiveHelper(type, directory);
             if (fileFound != null)
                 return fileFound;
         }
@@ -84,7 +84,7 @@ public class ScriptProvider
                     continue;
                 else if (dir.CurrentIsDir())
                 {
-                    string? foundFilePath = FindClassPathRecursiveHelper(type, dir.GetCurrentDir() + "/" + fileOrDirName);
+                    string foundFilePath = FindClassPathRecursiveHelper(type, dir.GetCurrentDir() + "/" + fileOrDirName);
                     if (foundFilePath != null)
                     {
                         dir.ListDirEnd();
