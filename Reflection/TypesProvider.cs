@@ -7,17 +7,11 @@ namespace GodotCustomTypes.Reflection;
 
 public class TypesProvider
 {
-    private readonly RelatedTypesProvider _typesProvider;
-    private readonly AssembliesProvider _assembliesProvider;
-
-    public TypesProvider()
-    {
-        _assembliesProvider = new AssembliesProvider();
-        _typesProvider = new RelatedTypesProvider(
-            typeof(Node),
-            typeof(Resource)
-        );
-    }
+    private readonly RelatedTypesProvider _typesProvider = new(
+        typeof(Node),
+        typeof(Resource)
+    );
+    private readonly AssembliesProvider _assembliesProvider = new();
 
     public IEnumerable<Type> GetCustomTypes()
         => _assembliesProvider

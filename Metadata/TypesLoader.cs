@@ -7,19 +7,11 @@ namespace GodotCustomTypes.Metadata;
 
 public class TypesLoader : ITypesLoader
 {
-    private readonly TypesProvider _typesProvider;
-    private readonly ScriptProvider _scriptProvider;
-    private readonly IconProvider _iconProvider;
-    private readonly BaseTypeProvider _baseTypeProvider;
+    private readonly TypesProvider _typesProvider = new();
+    private readonly ScriptProvider _scriptProvider = new();
+    private readonly IconProvider _iconProvider = new();
+    private readonly BaseTypeProvider _baseTypeProvider = new();
 
-    public TypesLoader()
-    {
-        _scriptProvider = new ScriptProvider();
-        _typesProvider = new TypesProvider();
-        _iconProvider = new IconProvider();
-        _baseTypeProvider = new BaseTypeProvider();
-    }
-    
     public IList<TypeMetadata> LoadCustomTypes()
     {
         var result = new List<TypeMetadata>();

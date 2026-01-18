@@ -2,21 +2,14 @@ using System.Collections.Generic;
 
 namespace GodotCustomTypes.Metadata;
 
-public class SortedTypesLoaderDecorator : ITypesLoader
+public class SortedTypesLoaderDecorator(ITypesLoader loader) : ITypesLoader
 {
-    private readonly ITypesLoader _loader;
-
-    public SortedTypesLoaderDecorator(ITypesLoader loader)
-    {
-        _loader = loader;
-    }
-
     public IList<TypeMetadata> LoadCustomTypes()
     {
         var baseTypesRegistryLookup = new HashSet<string>();
         var queue = new Queue<TypeMetadata>();
         var sorted = new List<TypeMetadata>();
-        var typeMetadatas = _loader.LoadCustomTypes();
+        var typeMetadatas = loader.LoadCustomTypes();
 
         foreach (var metadata in typeMetadatas)
         {

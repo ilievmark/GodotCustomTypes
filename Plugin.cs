@@ -1,7 +1,4 @@
-using Godot;
-using System.Collections.Generic;
-using GodotCustomTypes.Attributes;
-using GodotCustomTypes.Metadata;
+
 
 // Originally written by wmigor
 // Edited by Atlinx to recursively search for files.

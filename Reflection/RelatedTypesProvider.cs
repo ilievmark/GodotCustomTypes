@@ -6,15 +6,8 @@ using GodotCustomTypes.Attributes;
 
 namespace GodotCustomTypes.Reflection;
 
-public class RelatedTypesProvider
+public class RelatedTypesProvider(params Type[] types)
 {
-    private readonly Type[] _types;
-
-    public RelatedTypesProvider(params Type[] types)
-    {
-        _types = types;
-    }
-    
     public List<Type> Process(Assembly assembly)
     {
         var result = new List<Type>();
@@ -40,7 +33,7 @@ public class RelatedTypesProvider
 
     private bool IsRelatedType(Type type)
     {
-        foreach (var baseType in _types)
+        foreach (var baseType in types)
         {
             if (type.IsSubclassOf(baseType))
             {
