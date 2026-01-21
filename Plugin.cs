@@ -4,6 +4,12 @@
 // Edited by Atlinx to recursively search for files.
 // Edited by bls220 to update for Godot 4.0
 // wmigor's Public Repo: https://github.com/wmigor/godot-mono-custom-resource-register
+
+using System.Collections.Generic;
+using Godot;
+using GodotCustomTypes.Attributes;
+using GodotCustomTypes.Metadata;
+
 namespace GodotCustomTypes
 {
 #if TOOLS
